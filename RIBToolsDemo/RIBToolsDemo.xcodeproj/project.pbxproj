@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5109CE824E762A0008FBAA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109CE724E762A0008FBAA9 /* AppDelegate.swift */; };
+		C5109CEA24E762A0008FBAA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109CE924E762A0008FBAA9 /* SceneDelegate.swift */; };
+		C5109CF124E762A7008FBAA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5109CF024E762A7008FBAA9 /* Assets.xcassets */; };
+		C5109CF424E762A7008FBAA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5109CF224E762A7008FBAA9 /* LaunchScreen.storyboard */; };
+		C5109D3124E76322008FBAA9 /* ScoreStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109CFC24E76321008FBAA9 /* ScoreStream.swift */; };
+		C5109D3224E76322008FBAA9 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109CFD24E76321008FBAA9 /* PlayerType.swift */; };
+		C5109D3324E76322008FBAA9 /* RandomWinBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109CFF24E76321008FBAA9 /* RandomWinBuilder.swift */; };
+		C5109D3424E76322008FBAA9 /* RandomWinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0024E76321008FBAA9 /* RandomWinInteractor.swift */; };
+		C5109D3524E76322008FBAA9 /* RandomWinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0124E76321008FBAA9 /* RandomWinViewController.swift */; };
+		C5109D3624E76322008FBAA9 /* RandomWinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0224E76321008FBAA9 /* RandomWinRouter.swift */; };
+		C5109D3724E76322008FBAA9 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0424E76321008FBAA9 /* AppComponent.swift */; };
+		C5109D3924E76322008FBAA9 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0724E76321008FBAA9 /* LoggedOutViewController.swift */; };
+		C5109D3A24E76322008FBAA9 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0824E76321008FBAA9 /* LoggedOutInteractor.swift */; };
+		C5109D3B24E76322008FBAA9 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0924E76321008FBAA9 /* LoggedOutBuilder.swift */; };
+		C5109D3C24E76322008FBAA9 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0A24E76321008FBAA9 /* LoggedOutRouter.swift */; };
+		C5109D3E24E76322008FBAA9 /* LoggedInActionableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0D24E76321008FBAA9 /* LoggedInActionableItem.swift */; };
+		C5109D3F24E76322008FBAA9 /* RootActionableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D0E24E76321008FBAA9 /* RootActionableItem.swift */; };
+		C5109D4024E76322008FBAA9 /* LoggedInBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1024E76321008FBAA9 /* LoggedInBuilder.swift */; };
+		C5109D4124E76322008FBAA9 /* LoggedInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1124E76321008FBAA9 /* LoggedInRouter.swift */; };
+		C5109D4224E76322008FBAA9 /* LoggedInComponent+TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1224E76321008FBAA9 /* LoggedInComponent+TicTacToe.swift */; };
+		C5109D4324E76322008FBAA9 /* TicTacToeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1324E76321008FBAA9 /* TicTacToeAdapter.swift */; };
+		C5109D4424E76322008FBAA9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1424E76321008FBAA9 /* Game.swift */; };
+		C5109D4524E76322008FBAA9 /* LoggedInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1524E76321008FBAA9 /* LoggedInInteractor.swift */; };
+		C5109D4624E76322008FBAA9 /* LoggedInComponent+RandomWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1624E76321008FBAA9 /* LoggedInComponent+RandomWin.swift */; };
+		C5109D4724E76322008FBAA9 /* LoggedInComponent+OffGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1724E76321008FBAA9 /* LoggedInComponent+OffGame.swift */; };
+		C5109D4824E76322008FBAA9 /* RandomWinAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1824E76321008FBAA9 /* RandomWinAdapter.swift */; };
+		C5109D4924E76322008FBAA9 /* OffGameBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1A24E76321008FBAA9 /* OffGameBuilder.swift */; };
+		C5109D4A24E76322008FBAA9 /* OffGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1B24E76321008FBAA9 /* OffGameViewController.swift */; };
+		C5109D4B24E76322008FBAA9 /* OffGameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1C24E76321008FBAA9 /* OffGameInteractor.swift */; };
+		C5109D4C24E76322008FBAA9 /* OffGameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1D24E76321008FBAA9 /* OffGameRouter.swift */; };
+		C5109D4D24E76322008FBAA9 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D1F24E76321008FBAA9 /* RootComponent+LoggedOut.swift */; };
+		C5109D4E24E76322008FBAA9 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2024E76321008FBAA9 /* RootInteractor.swift */; };
+		C5109D4F24E76322008FBAA9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2124E76321008FBAA9 /* RootViewController.swift */; };
+		C5109D5024E76322008FBAA9 /* RootComponent+LoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2224E76321008FBAA9 /* RootComponent+LoggedIn.swift */; };
+		C5109D5124E76322008FBAA9 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2324E76321008FBAA9 /* RootRouter.swift */; };
+		C5109D5224E76322008FBAA9 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2424E76321008FBAA9 /* RootBuilder.swift */; };
+		C5109D5324E76322008FBAA9 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2624E76321008FBAA9 /* TicTacToeViewController.swift */; };
+		C5109D5424E76322008FBAA9 /* TicTacToeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2724E76321008FBAA9 /* TicTacToeInteractor.swift */; };
+		C5109D5524E76322008FBAA9 /* TicTacToeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2824E76321008FBAA9 /* TicTacToeBuilder.swift */; };
+		C5109D5624E76322008FBAA9 /* TicTacToeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2924E76321008FBAA9 /* TicTacToeRouter.swift */; };
+		C5109D5724E76322008FBAA9 /* BasicScoreBoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2B24E76321008FBAA9 /* BasicScoreBoardBuilder.swift */; };
+		C5109D5824E76322008FBAA9 /* BasicScoreBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2C24E76321008FBAA9 /* BasicScoreBoardInteractor.swift */; };
+		C5109D5924E76322008FBAA9 /* BasicScoreBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2D24E76321008FBAA9 /* BasicScoreBoardRouter.swift */; };
+		C5109D5A24E76322008FBAA9 /* BasicScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D2E24E76321008FBAA9 /* BasicScoreBoardViewController.swift */; };
+		C5109D5B24E76322008FBAA9 /* LaunchGameWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5109D3024E76322008FBAA9 /* LaunchGameWorkflow.swift */; };
+		C5109D5E24E7636A008FBAA9 /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D5D24E7636A008FBAA9 /* RIBs */; };
+		C5109D6124E7637F008FBAA9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D6024E7637F008FBAA9 /* SnapKit */; };
+		C5109D6424E7639E008FBAA9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D6324E7639E008FBAA9 /* RxSwift */; };
+		C5109D6624E7639E008FBAA9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D6524E7639E008FBAA9 /* RxRelay */; };
+		C5109D6824E7639E008FBAA9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D6724E7639E008FBAA9 /* RxCocoa */; };
+		C5109D8024E7678C008FBAA9 /* RIBDebugHost in Frameworks */ = {isa = PBXBuildFile; productRef = C5109D7F24E7678C008FBAA9 /* RIBDebugHost */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5109CE424E762A0008FBAA9 /* RIBToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIBToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5109CE724E762A0008FBAA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5109CE924E762A0008FBAA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C5109CEE24E762A0008FBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5109CF024E762A7008FBAA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5109CF324E762A7008FBAA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5109CF524E762A7008FBAA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5109CFC24E76321008FBAA9 /* ScoreStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreStream.swift; sourceTree = "<group>"; };
+		C5109CFD24E76321008FBAA9 /* PlayerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
+		C5109CFF24E76321008FBAA9 /* RandomWinBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWinBuilder.swift; sourceTree = "<group>"; };
+		C5109D0024E76321008FBAA9 /* RandomWinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWinInteractor.swift; sourceTree = "<group>"; };
+		C5109D0124E76321008FBAA9 /* RandomWinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWinViewController.swift; sourceTree = "<group>"; };
+		C5109D0224E76321008FBAA9 /* RandomWinRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWinRouter.swift; sourceTree = "<group>"; };
+		C5109D0424E76321008FBAA9 /* AppComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		C5109D0724E76321008FBAA9 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		C5109D0824E76321008FBAA9 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		C5109D0924E76321008FBAA9 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		C5109D0A24E76321008FBAA9 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		C5109D0D24E76321008FBAA9 /* LoggedInActionableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInActionableItem.swift; sourceTree = "<group>"; };
+		C5109D0E24E76321008FBAA9 /* RootActionableItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootActionableItem.swift; sourceTree = "<group>"; };
+		C5109D1024E76321008FBAA9 /* LoggedInBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInBuilder.swift; sourceTree = "<group>"; };
+		C5109D1124E76321008FBAA9 /* LoggedInRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInRouter.swift; sourceTree = "<group>"; };
+		C5109D1224E76321008FBAA9 /* LoggedInComponent+TicTacToe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+TicTacToe.swift"; sourceTree = "<group>"; };
+		C5109D1324E76321008FBAA9 /* TicTacToeAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeAdapter.swift; sourceTree = "<group>"; };
+		C5109D1424E76321008FBAA9 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C5109D1524E76321008FBAA9 /* LoggedInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedInInteractor.swift; sourceTree = "<group>"; };
+		C5109D1624E76321008FBAA9 /* LoggedInComponent+RandomWin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+RandomWin.swift"; sourceTree = "<group>"; };
+		C5109D1724E76321008FBAA9 /* LoggedInComponent+OffGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+OffGame.swift"; sourceTree = "<group>"; };
+		C5109D1824E76321008FBAA9 /* RandomWinAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomWinAdapter.swift; sourceTree = "<group>"; };
+		C5109D1A24E76321008FBAA9 /* OffGameBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffGameBuilder.swift; sourceTree = "<group>"; };
+		C5109D1B24E76321008FBAA9 /* OffGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffGameViewController.swift; sourceTree = "<group>"; };
+		C5109D1C24E76321008FBAA9 /* OffGameInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffGameInteractor.swift; sourceTree = "<group>"; };
+		C5109D1D24E76321008FBAA9 /* OffGameRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffGameRouter.swift; sourceTree = "<group>"; };
+		C5109D1F24E76321008FBAA9 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
+		C5109D2024E76321008FBAA9 /* RootInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		C5109D2124E76321008FBAA9 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C5109D2224E76321008FBAA9 /* RootComponent+LoggedIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedIn.swift"; sourceTree = "<group>"; };
+		C5109D2324E76321008FBAA9 /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		C5109D2424E76321008FBAA9 /* RootBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		C5109D2624E76321008FBAA9 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+		C5109D2724E76321008FBAA9 /* TicTacToeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeInteractor.swift; sourceTree = "<group>"; };
+		C5109D2824E76321008FBAA9 /* TicTacToeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeBuilder.swift; sourceTree = "<group>"; };
+		C5109D2924E76321008FBAA9 /* TicTacToeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeRouter.swift; sourceTree = "<group>"; };
+		C5109D2B24E76321008FBAA9 /* BasicScoreBoardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScoreBoardBuilder.swift; sourceTree = "<group>"; };
+		C5109D2C24E76321008FBAA9 /* BasicScoreBoardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScoreBoardInteractor.swift; sourceTree = "<group>"; };
+		C5109D2D24E76321008FBAA9 /* BasicScoreBoardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScoreBoardRouter.swift; sourceTree = "<group>"; };
+		C5109D2E24E76321008FBAA9 /* BasicScoreBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicScoreBoardViewController.swift; sourceTree = "<group>"; };
+		C5109D3024E76322008FBAA9 /* LaunchGameWorkflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchGameWorkflow.swift; sourceTree = "<group>"; };
+		C5109D7D24E7673F008FBAA9 /* RIBTools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RIBTools; path = ..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5109CE124E762A0008FBAA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5109D6424E7639E008FBAA9 /* RxSwift in Frameworks */,
+				C5109D5E24E7636A008FBAA9 /* RIBs in Frameworks */,
+				C5109D8024E7678C008FBAA9 /* RIBDebugHost in Frameworks */,
+				C5109D6824E7639E008FBAA9 /* RxCocoa in Frameworks */,
+				C5109D6624E7639E008FBAA9 /* RxRelay in Frameworks */,
+				C5109D6124E7637F008FBAA9 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5109CDB24E762A0008FBAA9 = {
+			isa = PBXGroup;
+			children = (
+				C5109D7D24E7673F008FBAA9 /* RIBTools */,
+				C5109CE624E762A0008FBAA9 /* RIBToolsDemo */,
+				C5109CE524E762A0008FBAA9 /* Products */,
+				C5109D7E24E7678C008FBAA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5109CE524E762A0008FBAA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5109CE424E762A0008FBAA9 /* RIBToolsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5109CE624E762A0008FBAA9 /* RIBToolsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D0C24E76321008FBAA9 /* ActionableItems */,
+				C5109D0324E76321008FBAA9 /* AppStart */,
+				C5109D0F24E76321008FBAA9 /* LoggedIn */,
+				C5109D0624E76321008FBAA9 /* LoggedOut */,
+				C5109CFB24E76320008FBAA9 /* Models */,
+				C5109D1924E76321008FBAA9 /* OffGame */,
+				C5109D2F24E76322008FBAA9 /* Promo */,
+				C5109CFE24E76321008FBAA9 /* RandomWin */,
+				C5109D1E24E76321008FBAA9 /* Root */,
+				C5109D2A24E76321008FBAA9 /* ScoreBoard */,
+				C5109D2524E76321008FBAA9 /* TicTacToe */,
+				C5109CE724E762A0008FBAA9 /* AppDelegate.swift */,
+				C5109CE924E762A0008FBAA9 /* SceneDelegate.swift */,
+				C5109CED24E762A0008FBAA9 /* Main.storyboard */,
+				C5109CF024E762A7008FBAA9 /* Assets.xcassets */,
+				C5109CF224E762A7008FBAA9 /* LaunchScreen.storyboard */,
+				C5109CF524E762A7008FBAA9 /* Info.plist */,
+			);
+			path = RIBToolsDemo;
+			sourceTree = "<group>";
+		};
+		C5109CFB24E76320008FBAA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5109CFC24E76321008FBAA9 /* ScoreStream.swift */,
+				C5109CFD24E76321008FBAA9 /* PlayerType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5109CFE24E76321008FBAA9 /* RandomWin */ = {
+			isa = PBXGroup;
+			children = (
+				C5109CFF24E76321008FBAA9 /* RandomWinBuilder.swift */,
+				C5109D0024E76321008FBAA9 /* RandomWinInteractor.swift */,
+				C5109D0124E76321008FBAA9 /* RandomWinViewController.swift */,
+				C5109D0224E76321008FBAA9 /* RandomWinRouter.swift */,
+			);
+			path = RandomWin;
+			sourceTree = "<group>";
+		};
+		C5109D0324E76321008FBAA9 /* AppStart */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D0424E76321008FBAA9 /* AppComponent.swift */,
+			);
+			path = AppStart;
+			sourceTree = "<group>";
+		};
+		C5109D0624E76321008FBAA9 /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D0724E76321008FBAA9 /* LoggedOutViewController.swift */,
+				C5109D0824E76321008FBAA9 /* LoggedOutInteractor.swift */,
+				C5109D0924E76321008FBAA9 /* LoggedOutBuilder.swift */,
+				C5109D0A24E76321008FBAA9 /* LoggedOutRouter.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
+		C5109D0C24E76321008FBAA9 /* ActionableItems */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D0D24E76321008FBAA9 /* LoggedInActionableItem.swift */,
+				C5109D0E24E76321008FBAA9 /* RootActionableItem.swift */,
+			);
+			path = ActionableItems;
+			sourceTree = "<group>";
+		};
+		C5109D0F24E76321008FBAA9 /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D1024E76321008FBAA9 /* LoggedInBuilder.swift */,
+				C5109D1124E76321008FBAA9 /* LoggedInRouter.swift */,
+				C5109D1224E76321008FBAA9 /* LoggedInComponent+TicTacToe.swift */,
+				C5109D1324E76321008FBAA9 /* TicTacToeAdapter.swift */,
+				C5109D1424E76321008FBAA9 /* Game.swift */,
+				C5109D1524E76321008FBAA9 /* LoggedInInteractor.swift */,
+				C5109D1624E76321008FBAA9 /* LoggedInComponent+RandomWin.swift */,
+				C5109D1724E76321008FBAA9 /* LoggedInComponent+OffGame.swift */,
+				C5109D1824E76321008FBAA9 /* RandomWinAdapter.swift */,
+			);
+			path = LoggedIn;
+			sourceTree = "<group>";
+		};
+		C5109D1924E76321008FBAA9 /* OffGame */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D1A24E76321008FBAA9 /* OffGameBuilder.swift */,
+				C5109D1B24E76321008FBAA9 /* OffGameViewController.swift */,
+				C5109D1C24E76321008FBAA9 /* OffGameInteractor.swift */,
+				C5109D1D24E76321008FBAA9 /* OffGameRouter.swift */,
+			);
+			path = OffGame;
+			sourceTree = "<group>";
+		};
+		C5109D1E24E76321008FBAA9 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D1F24E76321008FBAA9 /* RootComponent+LoggedOut.swift */,
+				C5109D2024E76321008FBAA9 /* RootInteractor.swift */,
+				C5109D2124E76321008FBAA9 /* RootViewController.swift */,
+				C5109D2224E76321008FBAA9 /* RootComponent+LoggedIn.swift */,
+				C5109D2324E76321008FBAA9 /* RootRouter.swift */,
+				C5109D2424E76321008FBAA9 /* RootBuilder.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		C5109D2524E76321008FBAA9 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D2624E76321008FBAA9 /* TicTacToeViewController.swift */,
+				C5109D2724E76321008FBAA9 /* TicTacToeInteractor.swift */,
+				C5109D2824E76321008FBAA9 /* TicTacToeBuilder.swift */,
+				C5109D2924E76321008FBAA9 /* TicTacToeRouter.swift */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		C5109D2A24E76321008FBAA9 /* ScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D2B24E76321008FBAA9 /* BasicScoreBoardBuilder.swift */,
+				C5109D2C24E76321008FBAA9 /* BasicScoreBoardInteractor.swift */,
+				C5109D2D24E76321008FBAA9 /* BasicScoreBoardRouter.swift */,
+				C5109D2E24E76321008FBAA9 /* BasicScoreBoardViewController.swift */,
+			);
+			path = ScoreBoard;
+			sourceTree = "<group>";
+		};
+		C5109D2F24E76322008FBAA9 /* Promo */ = {
+			isa = PBXGroup;
+			children = (
+				C5109D3024E76322008FBAA9 /* LaunchGameWorkflow.swift */,
+			);
+			path = Promo;
+			sourceTree = "<group>";
+		};
+		C5109D7E24E7678C008FBAA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5109CE324E762A0008FBAA9 /* RIBToolsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5109CF824E762A7008FBAA9 /* Build configuration list for PBXNativeTarget "RIBToolsDemo" */;
+			buildPhases = (
+				C5109CE024E762A0008FBAA9 /* Sources */,
+				C5109CE124E762A0008FBAA9 /* Frameworks */,
+				C5109CE224E762A0008FBAA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RIBToolsDemo;
+			packageProductDependencies = (
+				C5109D5D24E7636A008FBAA9 /* RIBs */,
+				C5109D6024E7637F008FBAA9 /* SnapKit */,
+				C5109D6324E7639E008FBAA9 /* RxSwift */,
+				C5109D6524E7639E008FBAA9 /* RxRelay */,
+				C5109D6724E7639E008FBAA9 /* RxCocoa */,
+				C5109D7F24E7678C008FBAA9 /* RIBDebugHost */,
+			);
+			productName = RIBToolsDemo;
+			productReference = C5109CE424E762A0008FBAA9 /* RIBToolsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5109CDC24E762A0008FBAA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Sahnti;
+				TargetAttributes = {
+					C5109CE324E762A0008FBAA9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = C5109CDF24E762A0008FBAA9 /* Build configuration list for PBXProject "RIBToolsDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5109CDB24E762A0008FBAA9;
+			packageReferences = (
+				C5109D5C24E7636A008FBAA9 /* XCRemoteSwiftPackageReference "RIBs" */,
+				C5109D5F24E7637F008FBAA9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C5109D6224E7639E008FBAA9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = C5109CE524E762A0008FBAA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5109CE324E762A0008FBAA9 /* RIBToolsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5109CE224E762A0008FBAA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5109CF424E762A7008FBAA9 /* LaunchScreen.storyboard in Resources */,
+				C5109CF124E762A7008FBAA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5109CE024E762A0008FBAA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5109D4324E76322008FBAA9 /* TicTacToeAdapter.swift in Sources */,
+				C5109D3224E76322008FBAA9 /* PlayerType.swift in Sources */,
+				C5109D4124E76322008FBAA9 /* LoggedInRouter.swift in Sources */,
+				C5109D4A24E76322008FBAA9 /* OffGameViewController.swift in Sources */,
+				C5109D5724E76322008FBAA9 /* BasicScoreBoardBuilder.swift in Sources */,
+				C5109D5124E76322008FBAA9 /* RootRouter.swift in Sources */,
+				C5109D4D24E76322008FBAA9 /* RootComponent+LoggedOut.swift in Sources */,
+				C5109D3C24E76322008FBAA9 /* LoggedOutRouter.swift in Sources */,
+				C5109D4724E76322008FBAA9 /* LoggedInComponent+OffGame.swift in Sources */,
+				C5109D5524E76322008FBAA9 /* TicTacToeBuilder.swift in Sources */,
+				C5109D3A24E76322008FBAA9 /* LoggedOutInteractor.swift in Sources */,
+				C5109D3924E76322008FBAA9 /* LoggedOutViewController.swift in Sources */,
+				C5109D3124E76322008FBAA9 /* ScoreStream.swift in Sources */,
+				C5109D4524E76322008FBAA9 /* LoggedInInteractor.swift in Sources */,
+				C5109D3424E76322008FBAA9 /* RandomWinInteractor.swift in Sources */,
+				C5109D5824E76322008FBAA9 /* BasicScoreBoardInteractor.swift in Sources */,
+				C5109D4B24E76322008FBAA9 /* OffGameInteractor.swift in Sources */,
+				C5109D4924E76322008FBAA9 /* OffGameBuilder.swift in Sources */,
+				C5109D4024E76322008FBAA9 /* LoggedInBuilder.swift in Sources */,
+				C5109D4824E76322008FBAA9 /* RandomWinAdapter.swift in Sources */,
+				C5109D5924E76322008FBAA9 /* BasicScoreBoardRouter.swift in Sources */,
+				C5109D5224E76322008FBAA9 /* RootBuilder.swift in Sources */,
+				C5109D3E24E76322008FBAA9 /* LoggedInActionableItem.swift in Sources */,
+				C5109D4F24E76322008FBAA9 /* RootViewController.swift in Sources */,
+				C5109D5624E76322008FBAA9 /* TicTacToeRouter.swift in Sources */,
+				C5109D5A24E76322008FBAA9 /* BasicScoreBoardViewController.swift in Sources */,
+				C5109D3F24E76322008FBAA9 /* RootActionableItem.swift in Sources */,
+				C5109CE824E762A0008FBAA9 /* AppDelegate.swift in Sources */,
+				C5109D3724E76322008FBAA9 /* AppComponent.swift in Sources */,
+				C5109D5024E76322008FBAA9 /* RootComponent+LoggedIn.swift in Sources */,
+				C5109D4224E76322008FBAA9 /* LoggedInComponent+TicTacToe.swift in Sources */,
+				C5109D4E24E76322008FBAA9 /* RootInteractor.swift in Sources */,
+				C5109CEA24E762A0008FBAA9 /* SceneDelegate.swift in Sources */,
+				C5109D5424E76322008FBAA9 /* TicTacToeInteractor.swift in Sources */,
+				C5109D5B24E76322008FBAA9 /* LaunchGameWorkflow.swift in Sources */,
+				C5109D3B24E76322008FBAA9 /* LoggedOutBuilder.swift in Sources */,
+				C5109D3624E76322008FBAA9 /* RandomWinRouter.swift in Sources */,
+				C5109D3524E76322008FBAA9 /* RandomWinViewController.swift in Sources */,
+				C5109D3324E76322008FBAA9 /* RandomWinBuilder.swift in Sources */,
+				C5109D4C24E76322008FBAA9 /* OffGameRouter.swift in Sources */,
+				C5109D5324E76322008FBAA9 /* TicTacToeViewController.swift in Sources */,
+				C5109D4424E76322008FBAA9 /* Game.swift in Sources */,
+				C5109D4624E76322008FBAA9 /* LoggedInComponent+RandomWin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5109CED24E762A0008FBAA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5109CEE24E762A0008FBAA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5109CF224E762A7008FBAA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5109CF324E762A7008FBAA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5109CF624E762A7008FBAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5109CF724E762A7008FBAA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5109CF924E762A7008FBAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3254VB4C5R;
+				INFOPLIST_FILE = RIBToolsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahnti.RIBToolsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5109CFA24E762A7008FBAA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3254VB4C5R;
+				INFOPLIST_FILE = RIBToolsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahnti.RIBToolsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5109CDF24E762A0008FBAA9 /* Build configuration list for PBXProject "RIBToolsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5109CF624E762A7008FBAA9 /* Debug */,
+				C5109CF724E762A7008FBAA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5109CF824E762A7008FBAA9 /* Build configuration list for PBXNativeTarget "RIBToolsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5109CF924E762A7008FBAA9 /* Debug */,
+				C5109CFA24E762A7008FBAA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5109D5C24E7636A008FBAA9 /* XCRemoteSwiftPackageReference "RIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C5109D5F24E7637F008FBAA9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		C5109D6224E7639E008FBAA9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5109D5D24E7636A008FBAA9 /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5109D5C24E7636A008FBAA9 /* XCRemoteSwiftPackageReference "RIBs" */;
+			productName = RIBs;
+		};
+		C5109D6024E7637F008FBAA9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5109D5F24E7637F008FBAA9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C5109D6324E7639E008FBAA9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5109D6224E7639E008FBAA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		C5109D6524E7639E008FBAA9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5109D6224E7639E008FBAA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		C5109D6724E7639E008FBAA9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5109D6224E7639E008FBAA9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C5109D7F24E7678C008FBAA9 /* RIBDebugHost */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RIBDebugHost;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C5109CDC24E762A0008FBAA9 /* Project object */;
+}

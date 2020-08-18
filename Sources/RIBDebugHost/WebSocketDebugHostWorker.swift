@@ -16,32 +16,30 @@ public final class WebSocketDebugHostWorker: Worker {
     
     public static let defaultUrl: URL = URL(string: "ws://0.0.0.0:8080")!
     
-    private weak var router: Routing?
-
+    public weak var router: Routing?
+    
     private let jsonEncoder: JSONEncoder = JSONEncoder()
     private let webSocketClient: RxWebSocketClient
+    private let server: DefaultWebSocketServer = DefaultWebSocketServer()
     private let monitoringTimeInterval: TimeInterval
-
-    public convenience init(
-    monitoringTimeInterval: TimeInterval = 1,
-    rootRouter: Routing,
-                webSocketURL: URL = defaultUrl) {
+    
+    public convenience init(monitoringTimeInterval: TimeInterval = 1,
+                            webSocketURL: URL = defaultUrl) {
         self.init(monitoringTimeInterval: monitoringTimeInterval,
-                  rootRouter: rootRouter,
                   webSocketClient: WebSocketClient(url: webSocketURL))
     }
     
-    public init(
-    monitoringTimeInterval: TimeInterval = 1,
-    rootRouter: Routing,
+    public init(monitoringTimeInterval: TimeInterval = 1,
                 webSocketClient: RxWebSocketClient) {
-        self.router = rootRouter
         self.monitoringTimeInterval = monitoringTimeInterval
         self.webSocketClient = webSocketClient
     }
-
+    
     public override func didStart(_ interactorScope: InteractorScope) {
         super.didStart(interactorScope)
+        
+        server.start()
+        
         webSocketClient.connect().disposeOnStop(self)
         
         Observable<Int>.interval(.milliseconds(Int(monitoringTimeInterval * 1000)), scheduler: MainScheduler.instance)
@@ -55,6 +53,12 @@ public final class WebSocketDebugHostWorker: Worker {
         }
         .subscribe()
         .disposeOnStop(self)
+    }
+    
+    public override func didStop() {
+        super.didStop()
+        
+        server.stop()
     }
     
     func received(text: String) {

@@ -16,6 +16,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-nio.git", .branch("master")),
+        .package(url: "https://github.com/apple/swift-nio-transport-services.git", .branch("master")),
         .package(url: "https://github.com/uber/RIBs.git", .branch("master")),
         .package(url: "https://github.com/RxSwiftCommunity/RxOptional", .branch("master")),
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .branch("master")),
@@ -26,6 +28,9 @@ let package = Package(
         .target(
             name: "RIBDebugHost",
             dependencies: [
+                .product(name: "NIO", package: "swift-nio"),
+                .product(name: "NIOHTTP1", package: "swift-nio"),
+                .product(name: "NIOWebSocket", package: "swift-nio"),
                 .byName(name: "RIBs"),
                 .byName(name: "RxOptional"),
                 .byName(name: "RxSwift"),
